@@ -1,7 +1,5 @@
 # Batsman Pro - AI Cricket Analytics
 
-![Batsman Pro](public/assets/screen_splash.jpg)
-
 Batsman Pro is an AI-powered cricket analytics app that automatically analyzes batting videos to generate highlights, classify shots, and deliver actionable performance insights for players and coaches.
 
 ## 🚀 Features
