@@ -12,7 +12,7 @@ const Download = () => {
                         Download Batsman Pro today and start analyzing your cricket shots like a professional.
                     </p>
                     <div className="hero-buttons">
-                        <button className="btn btn-primary"><FaAndroid size={20} /> Download APK</button>
+                        <a href="/assets/batsman-pro.apk" download className="btn btn-primary"><FaAndroid size={20} /> Download APK</a>
                         <button className="btn btn-secondary"><FaGooglePlay size={18} /> Play Store</button>
                     </div>
                 </div>

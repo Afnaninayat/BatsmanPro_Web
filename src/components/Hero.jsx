@@ -22,7 +22,7 @@ const Hero = () => {
                         The ultimate tool for cricketers. Detect bat-ball contact, generate automatic highlights, and classify shots with professional-grade AI.
                     </p>
                     <div className="hero-buttons">
-                        <a href="#download" className="btn btn-primary">
+                        <a href="/assets/batsman-pro.apk" download className="btn btn-primary">
                             <FaAndroid size={20} /> Download APK
                         </a>
                         <a href="#download" className="btn btn-secondary">
