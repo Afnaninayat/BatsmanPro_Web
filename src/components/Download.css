@@ -1,0 +1,79 @@
+.download-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-text {
+    max-width: 600px;
+}
+
+.qr-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    color: #000;
+    width: 200px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transform: rotate(-5deg);
+    transition: transform 0.3s;
+}
+
+.qr-box:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.qr-code-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.qr-pattern {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#000 20%, transparent 20%), radial-gradient(#000 20%, transparent 20%);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+    opacity: 0.8;
+}
+
+.qr-box p {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .download-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .download-text {
+        text-align: center;
+    }
+
+    .download-text .title,
+    .download-text .subtitle {
+        text-align: center !important;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .qr-box {
+        transform: rotate(0);
+    }
+}
