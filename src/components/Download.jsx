@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaAndroid, FaGooglePlay } from 'react-icons/fa';
-import QRCode from "react-qr-code";
+import { QRCodeSVG } from 'qrcode.react';
 import ComingSoonModal from './ComingSoonModal';
 import './Download.css';
 
@@ -30,17 +30,10 @@ const Download = () => {
                 </div>
 
                 <div className="qr-box">
-                    <div className="qr-code-placeholder" style={{ background: 'white', padding: '10px' }}>
-                        {apkUrl && (
-                            <QRCode
-                                value={apkUrl}
-                                size={180}
-                                style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                                viewBox={`0 0 256 256`}
-                            />
-                        )}
+                    <div className="qr-code-placeholder" style={{ background: 'white', padding: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        {apkUrl && <QRCodeSVG value={apkUrl} size={150} />}
                     </div>
-                    <p>Scan to Download</p>
+                    <p style={{ marginTop: '10px' }}>Scan to Download</p>
                 </div>
             </div>
         </section>
