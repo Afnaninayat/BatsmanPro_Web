@@ -44,7 +44,7 @@ Batsman Pro is an AI-powered cricket analytics app that automatically analyzes b
 
 The companion mobile application is built with Flutter and is available for Android.
 - **Scan & Download**: Use the built-in QR code on the website.
-- **Play Store**: Coming Soon (signup available).
+- **Play Store**: [Get it on Google Play](https://play.google.com/store/apps/details?id=com.uitu.batsmanpro&hl=en-US&ah=MCiV2b9oyDUPZJ2l24ijeiki_0M)
 
 ## 📄 License
 
