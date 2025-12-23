@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGooglePlay, FaAndroid } from 'react-icons/fa';
-import ComingSoonModal from './ComingSoonModal';
 import './Hero.css';
 
-const Hero = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
+const Hero = () => {
     return (
         <section className="hero">
-            <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             <div className="container hero-content">
                 <motion.div
                     className="hero-text"
@@ -29,9 +26,14 @@ const Hero = () => {
                         <a href="/assets/batsman-pro.apk" download className="btn btn-primary">
                             <FaAndroid size={20} /> Download APK
                         </a>
-                        <button className="btn btn-secondary" onClick={() => setIsModalOpen(true)}>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.uitu.batsmanpro&hl=en-US&ah=MCiV2b9oyDUPZJ2l24ijeiki_0M"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-secondary"
+                        >
                             <FaGooglePlay size={18} /> Get on Play Store
-                        </button>
+                        </a>
                     </div>
                 </motion.div>
 

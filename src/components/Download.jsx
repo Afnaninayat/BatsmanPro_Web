@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FaAndroid, FaGooglePlay } from 'react-icons/fa';
 import { QRCodeSVG } from 'qrcode.react';
-import ComingSoonModal from './ComingSoonModal';
 import './Download.css';
 
+
 const Download = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const [apkUrl, setApkUrl] = useState('');
 
     useEffect(() => {
@@ -14,7 +13,6 @@ const Download = () => {
 
     return (
         <section id="download" className="section download-section">
-            <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             <div className="container download-content">
                 <div className="download-text">
                     <h2 className="title" style={{ textAlign: 'left' }}>Ready to Level Up?</h2>
@@ -23,9 +21,14 @@ const Download = () => {
                     </p>
                     <div className="hero-buttons">
                         <a href="/assets/batsman-pro.apk" download className="btn btn-primary"><FaAndroid size={20} /> Download APK</a>
-                        <button className="btn btn-secondary" onClick={() => setIsModalOpen(true)}>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.uitu.batsmanpro&hl=en-US&ah=MCiV2b9oyDUPZJ2l24ijeiki_0M"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-secondary"
+                        >
                             <FaGooglePlay size={18} /> Play Store
-                        </button>
+                        </a>
                     </div>
                 </div>
 
